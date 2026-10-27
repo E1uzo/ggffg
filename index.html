@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма: Связаться с нами</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Связаться с нами</h2>
+    <form id="contactForm" novalidate>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="example@mail.com" required>
+            <div class="error-message" id="emailError">Введите корректный email адрес.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" placeholder="+79991234567" required>
+            <div class="error-message" id="phoneError">Номер телефона должен быть в формате +7XXXXXXXXXX (11 знаков).</div>
+        </div>
+
+        <div class="form-group">
+            <label for="file">Загрузить файл (только JPEG)</label>
+            <input type="file" id="file" accept=".jpeg, .jpg" required>
+            <div class="error-message" id="fileError">Пожалуйста, выберите файл с расширением .jpeg или .jpg.</div>
+        </div>
+
+        <button type="submit" class="submit-btn">Отправить</button>
+        <div class="success-message" id="successMessage">Форма успешно отправлена!</div>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
